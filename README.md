@@ -34,3 +34,7 @@ My main Technologies as of today (December 2022) are:
 - C++ - Low level stuff, always when you need it
 - C# - You always need to interface with some legacy code that only runs on Windows, right?
 
+## Important Links
+
+- [LinkedIN](https://www.linkedin.com/in/rhuanbarreto/)
+- [My Blog](https://rhuan.com.br/site)
