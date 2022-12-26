@@ -1,10 +1,9 @@
-name: Storybook Tests
+name: Tests
 
 on: deployment_status
 
 jobs:
   tests:
-    name: Run CI Tests
     timeout-minutes: 60
     runs-on: ubuntu-latest
     if: github.event.deployment_status.state == 'success'
@@ -16,7 +15,7 @@ jobs:
           cache: "yarn"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Run Storybook tests
-        run: yarn test-storybook
-        env:
-          TARGET_URL: "${{ github.event.deployment_status.target_url }}"
+      - name: Lint
+        run: yarn lint
+      - name: Storybook Tests
+        run: yarn test-storybook:ci
