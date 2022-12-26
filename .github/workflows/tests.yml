@@ -1,6 +1,6 @@
 name: Tests
 
-on: deployment_status
+on: pull_request
 
 jobs:
   tests:
