@@ -18,3 +18,7 @@ jobs:
         run: yarn lint
       - name: Storybook Tests
         run: yarn test-storybook:ci
+      - name: Code Coverage
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
