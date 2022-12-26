@@ -3,7 +3,8 @@ name: Storybook Tests
 on: deployment_status
 
 jobs:
-  test:
+  tests:
+    name: Run CI Tests
     timeout-minutes: 60
     runs-on: ubuntu-latest
     if: github.event.deployment_status.state == 'success'

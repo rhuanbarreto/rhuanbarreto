@@ -4,9 +4,8 @@ on: push
 
 jobs:
   chromatic-deployment:
-    # Operating System
+    name: Deploy to Chromatic
     runs-on: ubuntu-latest
-    # Job steps
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
