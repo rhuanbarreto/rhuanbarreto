@@ -1,4 +1,4 @@
-name: "Chromatic"
+name: Chromatic
 
 on: push
 
@@ -14,8 +14,8 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.5.1
         with:
-          node-version-file: ".nvmrc"
-          cache: "yarn"
+          node-version-file: .nvmrc
+          cache: yarn
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Publish to Chromatic
