@@ -1,4 +1,4 @@
-name: "Chromatic"
+name: Continuous Integration
 
 on: push
 
@@ -19,6 +19,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Publish to Chromatic
+        id: publish
         if: github.ref != 'refs/heads/master'
         uses: chromaui/action@v1
         with:
@@ -30,3 +31,8 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           autoAcceptChanges: true
+      - name: Run Storybook tests
+        run: yarn test-storybook --coverage
+        if: steps.publish.outputs.storybookUrl
+        env:
+          TARGET_URL: ${{ steps.publish.outputs.storybookUrl }}
