@@ -21,8 +21,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
+    name: Deploy to Github Pages
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-node@v3.5.1
         with:
           node-version-file: ".nvmrc"
-          cache: 'yarn'
+          cache: "yarn"
       - name: Install Packages
         run: yarn install --frozen-lockfile
       - name: Build Application
@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './dist'
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
