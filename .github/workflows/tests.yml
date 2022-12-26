@@ -6,7 +6,6 @@ jobs:
   tests:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    if: github.event.deployment_status.state == 'success'
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
