@@ -9,9 +9,9 @@
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test-storybook": "test-storybook",
+    "test-storybook": "test-storybook --coverage",
+    "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\"",
     "lint": "eslint",
-    "test": "test-storybook --coverage",
     "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN"
   },
   "dependencies": {
@@ -37,6 +37,7 @@
     "autoprefixer": "^10.4.13",
     "babel-loader": "^8.3.0",
     "chromatic": "^6.14.0",
+    "concurrently": "^7.6.0",
     "cssnano": "^5.1.14",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^24.0.0",
@@ -44,9 +45,11 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.11",
+    "http-server": "^14.1.1",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",
     "typescript": "*",
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "wait-on": "^7.0.1"
   }
 }
