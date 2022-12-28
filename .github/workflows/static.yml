@@ -34,6 +34,8 @@ jobs:
       - name: Install Packages
         run: yarn install --frozen-lockfile
       - name: Build Application
+        env:
+          BASE_PATH: /rhuanbarreto
         run: yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
