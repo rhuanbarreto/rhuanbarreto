@@ -7,7 +7,13 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    "@storybook/addon-coverage"
+    "@storybook/addon-coverage",
+    {
+      name: 'storybook-addon-sass-postcss',
+      options: {
+        loadSassAfterPostCSS: true,
+      },
+    },
   ],
   "framework": "@storybook/react",
   "core": {
