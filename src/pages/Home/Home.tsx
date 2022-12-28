@@ -1,5 +1,22 @@
-const App = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+import { HeroSection } from "../../components/HeroSection/HeroSection";
+import { StickyMenu } from "../../components/StickyMenu/StickyMenu";
+
+const Home = () => {
+  return (
+    <>
+      <HeroSection title="Rhuan Samary Barreto" sectionProps={{ id: "main" }}>
+        Hi! Wanna know more about me?
+      </HeroSection>
+      <StickyMenu
+        links={[
+          { children: "About Me" },
+          { children: "Career" },
+          { children: "Blogs" },
+          { children: "Get in Touch" },
+        ]}
+      />
+    </>
+  );
 };
 
-export default App;
+export default Home;
