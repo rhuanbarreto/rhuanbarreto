@@ -24,9 +24,11 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitZeroOnChanges: true
+          onlyChanged: true
       - name: Publish to Chromatic and auto accept changes
         if: github.ref == 'refs/heads/master'
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           autoAcceptChanges: true
+          onlyChanged: true
