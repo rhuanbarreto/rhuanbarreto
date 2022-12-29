@@ -14,8 +14,6 @@ jobs:
           cache: "yarn"
       - name: Install dependencies
         run: yarn install
-      - name: Lint
-        run: yarn lint
       - name: Storybook Tests
         run: yarn test-storybook:ci
       - name: Code Coverage
