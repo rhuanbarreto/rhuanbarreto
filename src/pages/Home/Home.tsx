@@ -1,7 +1,8 @@
+import { FC } from "react";
 import { HeroSection } from "../../components/HeroSection/HeroSection";
 import { StickyMenu } from "../../components/StickyMenu/StickyMenu";
 
-const Home = () => {
+const Home: FC = () => {
   return (
     <>
       <HeroSection title="Rhuan Samary Barreto" sectionProps={{ id: "main" }}>

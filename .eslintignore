@@ -25,4 +25,5 @@ dist-ssr
 
 storybook-static
 coverage
-eslint-results.sarif
+vite-env.d.ts
+vite.config.ts
