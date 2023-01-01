@@ -1,12 +1,21 @@
-import { FC, HTMLAttributes, PropsWithChildren } from "react";
+import {
+  AnchorHTMLAttributes,
+  DetailedHTMLProps,
+  FC,
+  HTMLAttributes,
+  PropsWithChildren,
+} from "react";
 
 interface Props extends PropsWithChildren {
   /** Title to be displayed in the section */
   title?: string;
   /** Button Props */
-  buttonProps?: HTMLAttributes<HTMLAnchorElement>;
+  buttonProps?: DetailedHTMLProps<
+    AnchorHTMLAttributes<HTMLAnchorElement>,
+    HTMLAnchorElement
+  >;
   /** Section Props */
-  sectionProps?: HTMLAttributes<HTMLElement>;
+  sectionProps?: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
 }
 
 export const HeroSection: FC<Props> = ({
