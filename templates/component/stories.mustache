@@ -1,10 +1,12 @@
 import { {{name}} } from "./{{name}}";
 
-export default { component: {{name}} };
+export default { component: {{name}}{{#page}}, parameters: { layout: "fullscreen" }{{/page}} };
 
-export const Default = {
+export const {{#page}}Page{{/page}}{{^page}}Default{{/page}} = {{curly}}{{^props}}};{{/props}}
+{{#props}}
   args: {
     title: "Test",
     children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 };
+{{/props}}

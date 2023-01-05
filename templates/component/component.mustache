@@ -1,14 +1,22 @@
-import { FC, PropsWithChildren } from "react";
+import { FC{{#props}}, PropsWithChildren{{/props}} } from "react";
 
+{{#props}}
 interface Props extends PropsWithChildren {
   /** First Prop */
   title?: string;
   /** Put More Props Here */
 }
 
-export const {{name}}: FC<Props> = ({ title, children }) => (
+{{/props}}
+export const {{name}}: FC{{#props}}<Props>{{/props}} = ({{#props}}{ title, children }{{/props}}) => (
   <>
+  {{#props}}
     <span>{title}</span>
     {children}
+  {{/props}}
+  {{^props}}
+    <div>{{name}}</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  {{/props}}
   </>
 );
