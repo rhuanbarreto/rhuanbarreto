@@ -24,7 +24,7 @@
     "@babel/core": "^7.20.7",
     "@microsoft/eslint-formatter-sarif": "^3.0.0",
     "@storybook/addon-actions": "^6.5.15",
-    "@storybook/addon-coverage": "^0.0.7",
+    "@storybook/addon-coverage": "^0.0.8",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-interactions": "^6.5.15",
     "@storybook/addon-links": "^6.5.15",

@@ -2013,10 +2013,10 @@
     lodash "^4.17.21"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-coverage@^0.0.7":
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-coverage/-/addon-coverage-0.0.7.tgz#3e71f3f02d4366aa94e977ec669bb52db8133ae1"
-  integrity sha512-pe9qI09kDAMXFACYBNOaYqsqb8Zpm9/O9WQqbFoPXLw1XNVvMa2mFJRI2D761l+52TkdfSeu/l19Bgo5h5qlGQ==
+"@storybook/addon-coverage@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-coverage/-/addon-coverage-0.0.8.tgz#6da3edf8c50038c6fe13b0575320632ae5bab41d"
+  integrity sha512-SVcDZhBybHDxFYjMzPqHPypboRJjSn2xJKxIOTIFONfb//Jg2/3uATyyamBPjvoxWRkNIqBpANGm+BpJlWZtog==
   dependencies:
     "@types/babel__core" "^7.1.19"
     "@types/istanbul-lib-coverage" "^2.0.4"
