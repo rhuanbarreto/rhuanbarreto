@@ -9,5 +9,8 @@
     "packages:react",
     "replacements:all"
   ],
-  "stabilityDays": 15
+  "stabilityDays": 15,
+  "automerge": true,
+  "automergeType": "pr",
+  "platformAutomerge": true
 }
