@@ -1,9 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:js-app",
+    "group:recommended",
     "schedule:nonOfficeHours",
-    ":labels(dependencies)"
+    ":labels(dependencies)",
+    "packages:eslint",
+    "packages:react",
+    "replacements:all"
   ],
   "stabilityDays": 15
 }
