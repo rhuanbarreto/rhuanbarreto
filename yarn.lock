@@ -8727,10 +8727,10 @@ rimraf@^3.0.0, rimraf@^3.0.2:
   optionalDependencies:
     fsevents "~2.3.2"
 
-rollup@^3.20.2:
-  version "3.21.5"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.21.5.tgz#1fbae43dc1079497b04604707f1cf979e51bfe49"
-  integrity sha512-a4NTKS4u9PusbUJcfF4IMxuqjFzjm6ifj76P54a7cKnvVzJaG12BLVR+hgU2YDGHzyMMQNxLAZWuALsn8q2oQg==
+rollup@^3.21.0:
+  version "3.21.6"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.21.6.tgz#f5649ccdf8fcc7729254faa457cbea9547eb86db"
+  integrity sha512-SXIICxvxQxR3D4dp/3LDHZIJPC8a4anKMHd4E3Jiz2/JnY+2bEjqrOokAauc5ShGVNFHlEFjBXAXlaxkJqIqSg==
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -9786,14 +9786,14 @@ vite-plugin-turbosnap@1.0.2:
   resolved "https://registry.yarnpkg.com/vite-plugin-turbosnap/-/vite-plugin-turbosnap-1.0.2.tgz#25009f84371207435c6c70f58a867b2c85f8846c"
   integrity sha512-irjKcKXRn7v5bPAg4mAbsS6DgibpP1VUFL9tlgxU6lloK6V9yw9qCZkS+s2PtbkZpWNzr3TN3zVJAc6J7gJZmA==
 
-vite@4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-4.3.1.tgz#9badb1377f995632cdcf05f32103414db6fbb95a"
-  integrity sha512-EPmfPLAI79Z/RofuMvkIS0Yr091T2ReUoXQqc5ppBX/sjFRhHKiPPF/R46cTdoci/XgeQpB23diiJxq5w30vdg==
+vite@4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-4.3.2.tgz#95a5e0ebee80ae218849312019318aa9e3a05c26"
+  integrity sha512-9R53Mf+TBoXCYejcL+qFbZde+eZveQLDYd9XgULILLC1a5ZwPaqgmdVpL8/uvw2BM/1TzetWjglwm+3RO+xTyw==
   dependencies:
     esbuild "^0.17.5"
     postcss "^8.4.21"
-    rollup "^3.20.2"
+    rollup "^3.21.0"
   optionalDependencies:
     fsevents "~2.3.2"
 
