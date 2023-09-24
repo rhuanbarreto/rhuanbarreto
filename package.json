@@ -51,7 +51,7 @@
     "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.33.2",
     "http-server": "14.1.1",
-    "inquirer": "9.2.10",
+    "inquirer": "9.2.11",
     "mustache": "4.2.0",
     "postcss": "8.4.29",
     "prettier": "3.0.3",
