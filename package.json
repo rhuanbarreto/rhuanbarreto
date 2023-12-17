@@ -42,7 +42,7 @@
     "chromatic": "10.0.0",
     "concurrently": "8.2.2",
     "cssnano": "6.0.1",
-    "eslint": "8.54.0",
+    "eslint": "8.55.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-config-standard-with-typescript": "40.0.0",
     "eslint-plugin-import": "2.29.0",
