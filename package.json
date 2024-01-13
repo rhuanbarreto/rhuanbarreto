@@ -21,7 +21,7 @@
     "react-router-dom": "6.21.1"
   },
   "devDependencies": {
-    "@babel/core": "7.23.6",
+    "@babel/core": "7.23.7",
     "@microsoft/eslint-formatter-sarif": "3.0.0",
     "@storybook/addon-actions": "7.6.6",
     "@storybook/addon-coverage": "1.0.0",
