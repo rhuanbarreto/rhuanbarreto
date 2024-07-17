@@ -23,6 +23,8 @@ My main Technologies as of today (May 2024) are:
   - Deployment using docker containers that can be deployed to any cloud-specific service (Azure, GCP, AWS) or using Kubernetes
 - Infra
   - [Pulumi](https://www.pulumi.com/) - Infra as a code done in the right way with access to all programming primitives without having to learn another language.
+  - [Pants](https://pantsbuild.org/) - Python monorepo management. The right tool for solving the right problem. No need for Bazel. Very specific to all the python primitives.
+  - [Moon](https://moonrepo.dev/docs) - Typescript monorepo management made easy. Blazing fast. Task orchestration made very easy.
 
 ## Technologies I have worked with
 
