@@ -54,7 +54,7 @@
     "http-server": "14.1.1",
     "inquirer": "9.3.6",
     "mustache": "4.2.0",
-    "postcss": "8.4.39",
+    "postcss": "8.4.40",
     "prettier": "3.3.3",
     "storybook": "8.2.9",
     "tailwindcss": "3.4.10",
