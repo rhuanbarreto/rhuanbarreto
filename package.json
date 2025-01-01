@@ -44,7 +44,7 @@
     "cssnano": "7.0.6",
     "eslint": "9.17.0",
     "eslint-config-prettier": "9.1.0",
-    "eslint-config-love": "98.0.2",
+    "eslint-config-love": "112.0.0",
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-n": "17.15.0",
     "eslint-plugin-prettier": "5.2.1",
