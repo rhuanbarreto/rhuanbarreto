@@ -46,3 +46,7 @@ My main Technologies as of today (May 2024) are:
 
 - [LinkedIN](https://www.linkedin.com/in/rhuanbarreto/)
 - [My Blog](https://rhuan.no)
+
+## Want to know more about me?
+
+Read my principles: https://github.com/rhuanbarreto/rhuanbarreto/wiki/Principles/
