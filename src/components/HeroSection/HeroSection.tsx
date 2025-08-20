@@ -1,12 +1,21 @@
-import { FC, HTMLAttributes, PropsWithChildren } from "react";
+import {
+  AnchorHTMLAttributes,
+  DetailedHTMLProps,
+  FC,
+  HTMLAttributes,
+  PropsWithChildren,
+} from "react";
 
 interface Props extends PropsWithChildren {
   /** Title to be displayed in the section */
   title?: string;
   /** Button Props */
-  buttonProps?: HTMLAttributes<HTMLAnchorElement>;
+  buttonProps?: DetailedHTMLProps<
+    AnchorHTMLAttributes<HTMLAnchorElement>,
+    HTMLAnchorElement
+  >;
   /** Section Props */
-  sectionProps?: HTMLAttributes<HTMLElement>;
+  sectionProps?: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
 }
 
 export const HeroSection: FC<Props> = ({
@@ -20,8 +29,8 @@ export const HeroSection: FC<Props> = ({
     {...sectionProps}
   >
     <div className="max-w-3xl mx-auto text-center text-white">
-      {title != null && <h1 className="text-4xl font-bold mb-4">{title}</h1>}
-      <p className="text-lg mb-8">{children}</p>
+      {title != null && <h1 className="text-4xl font-bold mb-8">{title}</h1>}
+      <div className="text-lg mb-8">{children}</div>
       {buttonProps != null && (
         <a
           {...buttonProps}
