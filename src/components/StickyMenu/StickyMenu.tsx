@@ -1,7 +1,19 @@
-import { FC, HTMLAttributes, PropsWithChildren, ReactNode } from "react";
+import {
+  AnchorHTMLAttributes,
+  DetailedHTMLProps,
+  FC,
+  PropsWithChildren,
+  ReactNode,
+} from "react";
 
 interface Props extends PropsWithChildren {
-  links?: Array<{ component: ReactNode } | HTMLAttributes<HTMLAnchorElement>>;
+  links?: Array<
+    | { component: ReactNode }
+    | DetailedHTMLProps<
+        AnchorHTMLAttributes<HTMLAnchorElement>,
+        HTMLAnchorElement
+      >
+  >;
 }
 
 export const StickyMenu: FC<Props> = ({ links = [], children }: Props) => {
